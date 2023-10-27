@@ -1,0 +1,36 @@
+#+TITLE: Edit Imputation
+#+AUTHOR: Zhenhua Wang
+#+SETUPFILE: ~/.emacs.d/OrgFiles/LatexTemplates/zw-latex-standard.setup
+#+OPTIONS: num:t toc:nil
+#+BIBLIOGRAPHY: ./reference.bib
+
+* Automatic Edit and Imputation
+- select reported values to change according to some heuristic or loss function
+- replace those values with plausible imputations
+
+* Bayesian Edit Imputation
+** Multiple Imputation of Missing or Faulty Values Under Linear Constraints [cite:@kim2014multiple]
+This paper follows a two-step imputation process. It first models the data using Dirichlet Process Mixtures of Normals with Truncation. Then, it uses a hit-and-run sampler for the imputation.
+
+** Simultaneous Edit-Imputation for Continuous Microdata [cite:@kim2015simultaneous]
+In this paper, the author uses a hierarchical model with three levels. It includes a model for the true data with the support on the set of values that satisfy all editing constrain, a model for latent indicators of the variables that are in error, and models (measurement error model) for the reported responses for variables in error.
+
+Specifically, it uses a finite mixture of multivariate normal distributions with a constrained support for true data model, a uniform distribution for error indicator model.
+
+** Bayesian Simultaneous Edit and Imputation for Multivariate Categorical Data [cite:@manrique2017bayesian]
+This paper uses the truncated Bayesian nonparametric latent class model as their response model.
+
+**  Simultaneous Edit and Imputation For Household Data with Structural Zeros [cite:@akande2019simultaneous]
+This paper uses a nested data Dirichlet process mixture of products of multinomial distributions as the model for the true latent values of the data, truncated to allow only households that satisfy all edit constraints.
+
+** Statistical Disclosure Limitation in the Presence of Edit Rules [cite:@kim2015statistical]
+This paper compares edit-after-SDL and edit-preserving SDL. In edit-after-SDL, an agency first applies an SDL method to the collected data. Any post-SDLrecords that violate the constraints are deleted or “repaired”. In edit-preserving SDL, we draw candidate masked values repeatedly until they satisfy all edit rules (e.g. through reject sampling).
+
+** Simultaneous edit-imputation and disclosure limitation for business establishment data [cite:@kim2018simultaneous]
+This paper uses a two-stage process. The first stage ([cite:@kim2015simultaneous]) generates $m$ plausible imputations that satisfy all edit rules. The second stage re-estimate the joint probability model on each of the $m$ plausible datasets and generates $r$ synthetic datasets for each plausible edited dataset.
+
+** Synthetic microdata for establishment surveys under informative sampling [cite:@kim2021synthetic]
+This paper is built on top of [cite:@kim2014multiple], and it incorporates pseudo likelihood framework in DP Gaussian mixture model.
+
+#+CITE_EXPORT: natbib kluwer
+#+PRINT_BIBLIOGRAPHY:
