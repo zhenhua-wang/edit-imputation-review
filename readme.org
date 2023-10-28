@@ -1,13 +1,10 @@
 #+TITLE: Edit Imputation
 #+AUTHOR: Zhenhua Wang
 #+SETUPFILE: ~/.emacs.d/OrgFiles/LatexTemplates/zw-latex-standard.setup
-#+OPTIONS: num:t toc:nil prop:t
+#+OPTIONS: toc:nil
 #+BIBLIOGRAPHY: ./reference.bib
 
 * Table of Contents :noexport:TOC:
-:PROPERTIES:
-:UNNUMBERED: t
-:END:
 - [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
 - [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
 
