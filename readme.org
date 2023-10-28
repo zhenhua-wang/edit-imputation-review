@@ -1,7 +1,7 @@
 #+TITLE: Edit Imputation
 #+AUTHOR: Zhenhua Wang
 #+SETUPFILE: ~/.emacs.d/OrgFiles/LatexTemplates/zw-latex-standard.setup
-#+OPTIONS: num:t toc:nil
+#+OPTIONS: num:t toc:nil prop:t
 #+BIBLIOGRAPHY: ./reference.bib
 
 * Table of Contents :noexport:TOC:
