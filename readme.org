@@ -31,7 +31,7 @@ This paper uses a nested data Dirichlet process mixture of products of multinomi
 This paper compares edit-after-SDL and edit-preserving SDL. In edit-after-SDL, an agency first applies an SDL method to the collected data. Any post-SDLrecords that violate the constraints are deleted or “repaired”. In edit-preserving SDL, we draw candidate masked values repeatedly until they satisfy all edit rules (e.g. through reject sampling).
 
 ** Simultaneous edit-imputation and disclosure limitation for business establishment data [cite:@kim2018simultaneous]
-This paper uses a two-stage process. The first stage ([cite:@kim2015simultaneous]) generates $m$ plausible imputations that satisfy all edit rules. The second stage re-estimate the joint probability model on each of the $m$ plausible datasets and generates $r$ synthetic datasets for each plausible edited dataset.
+This paper uses a two-stage process. The first stage [cite:@kim2015simultaneous] generates $m$ plausible imputations that satisfy all edit rules. The second stage re-estimate the joint probability model on each of the $m$ plausible datasets and generates $r$ synthetic datasets for each plausible edited dataset.
 
 ** Synthetic microdata for establishment surveys under informative sampling [cite:@kim2021synthetic]
 This paper is built on top of [cite:@kim2014multiple], and it incorporates pseudo likelihood framework in DP Gaussian mixture model.
