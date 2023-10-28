@@ -4,6 +4,17 @@
 #+OPTIONS: num:t toc:nil
 #+BIBLIOGRAPHY: ./reference.bib
 
+* Table of Contents :noexport::TOC:
+- [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
+- [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
+  - [[#multiple-imputation-of-missing-or-faulty-values-under-linear-constraints-citekim2014multiple][Multiple Imputation of Missing or Faulty Values Under Linear Constraints [cite:@kim2014multiple]]]
+  - [[#simultaneous-edit-imputation-for-continuous-microdata-citekim2015simultaneous][Simultaneous Edit-Imputation for Continuous Microdata [cite:@kim2015simultaneous]]]
+  - [[#bayesian-simultaneous-edit-and-imputation-for-multivariate-categorical-data-citemanrique2017bayesian][Bayesian Simultaneous Edit and Imputation for Multivariate Categorical Data [cite:@manrique2017bayesian]]]
+  -  [[#simultaneous-edit-and-imputation-for-household-data-with-structural-zeros-citeakande2019simultaneous][Simultaneous Edit and Imputation For Household Data with Structural Zeros [cite:@akande2019simultaneous]]]
+  - [[#statistical-disclosure-limitation-in-the-presence-of-edit-rules-citekim2015statistical][Statistical Disclosure Limitation in the Presence of Edit Rules [cite:@kim2015statistical]]]
+  - [[#simultaneous-edit-imputation-and-disclosure-limitation-for-business-establishment-data-citekim2018simultaneous][Simultaneous edit-imputation and disclosure limitation for business establishment data [cite:@kim2018simultaneous]]]
+  - [[#synthetic-microdata-for-establishment-surveys-under-informative-sampling-citekim2021synthetic][Synthetic microdata for establishment surveys under informative sampling [cite:@kim2021synthetic]]]
+
 * Automatic Edit and Imputation
 - select reported values to change according to some heuristic or loss function
 - replace those values with plausible imputations
