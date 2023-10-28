@@ -8,7 +8,6 @@
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
-
 - [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
 - [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
 
