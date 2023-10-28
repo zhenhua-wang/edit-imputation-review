@@ -4,7 +4,7 @@
 #+OPTIONS: num:t toc:nil
 #+BIBLIOGRAPHY: ./reference.bib
 
-* Table of Contents :noexport::TOC:
+* Table of Contents :noexport:TOC:
 - [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
 - [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
 
