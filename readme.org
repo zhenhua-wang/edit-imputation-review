@@ -4,6 +4,10 @@
 #+OPTIONS: num:t toc:nil
 #+BIBLIOGRAPHY: ./reference.bib
 
+* Table of Contents :noexport::TOC:
+- [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
+- [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
+
 * Automatic Edit and Imputation
 - select reported values to change according to some heuristic or loss function
 - replace those values with plausible imputations
