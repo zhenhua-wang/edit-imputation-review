@@ -41,7 +41,7 @@ This paper is built on top of [cite:@kim2014multiple], and it incorporates pseud
 * Complex Survey
 ** Bayesian estimation under informative sampling [cite:@savitsky2016bayesian]
 
-** Fully Bayesian estimation under informative sampling
+** Fully Bayesian estimation under informative sampling [cite:@leon2019fully]
 This paper derives the posterior population distribution corrected by sampling weights
 
 ** Bayesian Data Synthesis and Disclosure Risk Quantification: An Application to the Consumer Expenditure Surveys [cite:@hu2018bayesian]
@@ -53,7 +53,7 @@ This paper protects the county label of consumer units in CES. They use two mode
 This paper generates synthetic data through pseudo posterior where records with high identification risk are down-weighted. The identification risk is defined by the probability that the synthetic values for a record are not close to the truth.
 
 ** Bayesian pseudo posterior mechanism under asymptotic differential privacy [cite:@savitsky2022bayesian]
-This paper shows a connection between pseudo posterior and differential privacy
+This paper extends [cite:@hu2022risk] and shows a connection between pseudo posterior and differential privacy, by constructing risk-related weights that achieves a formal privacy guarantee.
 
 ** Private Tabular Survey Data Products through Synthetic Microdata Generation [cite:@hu2022private]
 1. Fully Bayes model of observed sample: FBS jointly models sampling weighs and observed samples with a bivariate normal distribution
