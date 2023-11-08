@@ -7,6 +7,8 @@
 * Table of Contents :noexport:TOC:
 - [[#automatic-edit-and-imputation][Automatic Edit and Imputation]]
 - [[#bayesian-edit-imputation][Bayesian Edit Imputation]]
+- [[#complex-survey][Complex Survey]]
+- [[#reference][Reference]]
 
 * Automatic Edit and Imputation
 - select reported values to change according to some heuristic or loss function
@@ -35,6 +37,27 @@ This paper uses a two-stage process. The first stage [cite:@kim2015simultaneous]
 
 ** Synthetic microdata for establishment surveys under informative sampling [cite:@kim2021synthetic]
 This paper is built on top of [cite:@kim2014multiple], and it incorporates pseudo likelihood framework in DP Gaussian mixture model.
+
+* Complex Survey
+** Bayesian estimation under informative sampling [cite:@savitsky2016bayesian]
+
+** Fully Bayesian estimation under informative sampling
+This paper derives the posterior population distribution corrected by sampling weights
+
+** Bayesian Data Synthesis and Disclosure Risk Quantification: An Application to the Consumer Expenditure Surveys [cite:@hu2018bayesian]
+This paper protects the county label of consumer units in CES. They use two models:
+1. Dirichlet Process mixtures of products of multinomials
+2. nonparametric version of areal models with Dirichlet Process priors (DP-areal), which models counts of county labels of observations sharing similar characteristics.
+
+** Risk-Efficient Bayesian Data Synthesis for Privacy Protection [cite:@hu2022risk]
+This paper generates synthetic data through pseudo posterior where records with high identification risk are down-weighted. The identification risk is defined by the probability that the synthetic values for a record are not close to the truth.
+
+** Bayesian pseudo posterior mechanism under asymptotic differential privacy [cite:@savitsky2022bayesian]
+This paper shows a connection between pseudo posterior and differential privacy
+
+** Private Tabular Survey Data Products through Synthetic Microdata Generation [cite:@hu2022private]
+1. Fully Bayes model of observed sample: FBS jointly models sampling weighs and observed samples with a bivariate normal distribution
+2. Fully Bayes model of population: FBP uses sampling weights to correct population bias and the outcome variable under the population distribution
 
 * Reference :ignore:
 #+CITE_EXPORT: natbib kluwer
